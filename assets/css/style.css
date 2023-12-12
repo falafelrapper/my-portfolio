@@ -18,16 +18,33 @@ body{
     height: 4rem;
 }
 
-h1{
+.zach{
     margin: 1rem;
 }
 
-.list a{
+.about-me{
+    margin: 1rem;
+}
+
+.about-me-text{
+    margin: 1rem;
+}
+
+
+.nav-list a{
     margin: .5rem .5rem 0 0;
     display: inline;
     text-align: center;
     color: var(--teal);
     font-size: 50%;
+}
+
+.nav-list a:hover{
+    color: white;
+    background-color: var(--teal);
+    padding: 2px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 .contacts a{
@@ -36,6 +53,14 @@ h1{
     text-align: right;
     color: var(--teal);
     font-size: 100%;
+}
+
+.contacts a:hover{
+    color: white;
+    background-color: var(--teal);
+    padding: 2px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 footer{
