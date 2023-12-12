@@ -1,0 +1,49 @@
+:root{
+    --teal: #1097a8;
+    --cream: #ddce9e;
+    --miku: #15f8e5;
+    --maintext: #5a5a5a;
+}
+
+body{
+    background-color: var(--cream);
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 200%;
+    color: var(--teal);
+    background-color: var(--maintext);
+    height: 4rem;
+}
+
+h1{
+    margin: 1rem;
+}
+
+.list a{
+    margin: .5rem .5rem 0 0;
+    display: inline;
+    text-align: center;
+    color: var(--teal);
+    font-size: 50%;
+}
+
+.contacts a{
+    margin: 1.5rem;
+    display: inline-block;
+    text-align: right;
+    color: var(--teal);
+    font-size: 100%;
+}
+
+footer{
+    text-align: center;
+}
+
+@media screen and (max-width: 968px){
+}
+
+@media screen and (max-width: 768px){
+}
