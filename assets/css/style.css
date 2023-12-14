@@ -42,7 +42,7 @@ body{
     padding-right: 1rem;
     line-height: 150px;
     text-align: right;
-    border-right: 2px solid var(--miku);
+    border-right: 4px solid var(--miku);
 }
 
 .about-me-text{
@@ -71,7 +71,7 @@ body{
     padding-right: 1rem;
     line-height: 150px;
     text-align: right;
-    border-right: 2px solid var(--miku);
+    border-right: 4px solid var(--miku);
 }
 
 .work-card{
@@ -127,7 +127,7 @@ body{
     padding-right: 1rem;
     line-height: 50px;
     text-align: right;
-    border-right: 2px solid var(--miku);
+    border-right: 4px solid var(--miku);
 }
 
 .contact-me .contacts{
@@ -183,19 +183,27 @@ footer{
 
 @media screen and (max-width: 768px){
     .about-me h2,
-    .about-me-text{
+    .about-me-text,
+    .work h2,
+    .work-card,
+    .contact-me h2,
+    .contacts a{
         text-align: center;
         flex: 1 0 90%;
         border-right: none;
     }
 
-    .about-me h2{
+    .about-me h2,
+    .work h2,
+    .contact-me h2{
         margin: 0 1rem;
         line-height: 1;
         padding: 0;
         border-bottom: 2px solid var(--miku);
     }
-    .about-me{
+    .about-me,
+    .work,
+    .contact-me{
         flex-wrap: wrap;
         justify-content: flex-start;
     }
