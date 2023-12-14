@@ -24,7 +24,7 @@ body{
 
 .header-image{
     background-image: url("../images/site-1.jpg");
-    height: 400px;
+    min-height: 400px;
     width: 100%;
     background-size: cover;
     background-position:center;
@@ -37,6 +37,7 @@ body{
 }
 
 .about-me h2{
+    font-size: 125%;
     flex: 1 0 20%;
     padding-right: 1rem;
     line-height: 150px;
@@ -55,14 +56,41 @@ body{
     justify-content: space-between;
 }
 
+.work-flex{
+    flex: 1 0 80%;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .work h2{
+    font-size: 125%;
     flex: 1 0 20%;
     padding-right: 1rem;
-    line-height: 200px;
+    line-height: 150px;
     text-align: right;
     border-right: 2px solid var(--miku);
 }
 
+.work-card{
+    border-style: solid;
+    border-width: 3px;
+    margin: 20px;
+    color: var(--miku);
+    background-color: var(--maintext);
+}
+
+.work-card h3{
+    margin-left: 5px;
+}
+
+.work-card img{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
 .nav-list a{
     margin: .5rem .5rem 0 0;
     display: inline;
@@ -80,6 +108,13 @@ body{
     transition: all 0.2s ease-in-out;
 }
 
+
+.work-card:hover{
+    font-size: 200%;
+    transition: all 0.2s ease-in-out;
+}
+
+
 .contact-me{
     margin: 1rem;
     display: flex;
@@ -88,20 +123,24 @@ body{
 
 .contact-me h2{
     flex: 1 0 20%;
+    font-size: 125%;
     padding-right: 1rem;
     line-height: 50px;
     text-align: right;
     border-right: 2px solid var(--miku);
 }
 
+.contact-me .contacts{
+    flex: 1 0 80%;
+}
 
 .contacts a{
     display: inline-block;
     text-align: right;
     color: var(--teal);
     font-size: 100%;
-    margin: 1rem 3.8rem;
-    flex: 1 0 80%;
+    margin: 1rem 0 0 10rem;
+
 }
 
 .contacts a:hover{
@@ -120,14 +159,44 @@ footer{
     background-color: var(--maintext);
 }
 
- /* @media screen and (max-width: 968px){
+ @media screen and (max-width: 968px){
     .about-me h2,
     .about-me-text{
-        flex: 1 0 100%;
+        text-align: center;
+        flex: 1 0 50%;
+        border-right: none;
+    }
+
+    .about-me h2{
+        margin: 0 10rem;
+        line-height: 1;
+        padding: 0;
+        border-bottom: 2px solid var(--miku);
+    }
+
+    .about-me{
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 }
 
 
 @media screen and (max-width: 768px){
+    .about-me h2,
+    .about-me-text{
+        text-align: center;
+        flex: 1 0 90%;
+        border-right: none;
+    }
 
-} */
+    .about-me h2{
+        margin: 0 1rem;
+        line-height: 1;
+        padding: 0;
+        border-bottom: 2px solid var(--miku);
+    }
+    .about-me{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
