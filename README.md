@@ -33,7 +33,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## The Completed Challenge
 
-As you can see, we now have a site that works with transitional animations, a small portfolio of work you can see and interact with, and multiple links to contact me by. This includes two links in the work portfolio that you can also visit as well! Feel free to hover around and see how the work links look and feel!
+As you can see, we now have a site that works with transitional animations, a small portfolio of work you can see and interact with, and multiple links to contact me by. This includes two links in the work portfolio that you can also visit as well! Feel free to hover around and see how the work links look and feel! Click [here](https://falafelrapper.github.io/my-portfolio/) to view the completed site!
 
 ![alt text](./assets/repo-images/example.png?raw=true "Completed Site")
 
