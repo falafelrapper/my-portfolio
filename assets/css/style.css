@@ -1,8 +1,8 @@
 :root{
-    --teal: #1097a8;
-    --cream: #ddce9e;
+    --teal: #009FB7;
+    --cream: #FED766;
     --miku: #15f8e5;
-    --maintext: #5a5a5a;
+    --maintext: #272727;
 }
 
 body{
@@ -23,7 +23,7 @@ body{
 }
 
 .header-image{
-    background-image: url("../images/site-1.jpg");
+    background-image: url("../images/lain62.jpg");
     min-height: 400px;
     width: 100%;
     background-size: cover;
@@ -40,7 +40,7 @@ body{
     font-size: 125%;
     flex: 1 0 20%;
     padding-right: 1rem;
-    line-height: 150px;
+    line-height: 100px;
     text-align: right;
     border-right: 4px solid var(--miku);
 }
@@ -48,12 +48,17 @@ body{
 .about-me-text{
     margin: 1rem;
     flex: 1 0 80%;
+    padding-right: 10%;
 }
 
 .work{
     margin: 1rem;
     display: flex;
     justify-content: space-between;
+}
+
+#main{
+    flex: 0 0 90%;
 }
 
 .work-flex{
@@ -75,28 +80,33 @@ body{
 }
 
 .work-card{
+    flex: 0 0 45%;
     border-style: solid;
     border-width: 3px;
     margin: 20px;
     color: var(--miku);
     background-color: var(--maintext);
+    background-blend-mode: soft-light;
+    transition: all 0.2s ease-out;
+    
 }
 
 .work-card h3{
+    max-height: 50px;
     margin-left: 5px;
 }
 
 .work-card img{
-    max-width: 100%;
-    max-height: 100%;
-    
+    max-width: 100%;    
 }
+
 .nav-list a{
     margin: .5rem .5rem 0 0;
     display: inline;
     text-align: center;
     color: var(--teal);
     font-size: 50%;
+    transition: all 0.2s ease-out;
 }
 
 .nav-list a:hover{
@@ -105,13 +115,19 @@ body{
     font-size: 55%;
     padding: 2px;
     border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
 }
-
 
 .work-card:hover{
     font-size: 200%;
-    transition: all 0.2s ease-in-out;
+    background-color:rgba(215, 228, 37, 0.5);
+    transition: all 0.2s ease-out;
+}
+
+.work-card:hover img{
+    opacity: 0.7;
+    font-size: 200%;
+    transition: all 0.2s ease-out;
 }
 
 
@@ -140,6 +156,7 @@ body{
     color: var(--teal);
     font-size: 100%;
     margin: 1rem 0 0 10rem;
+    transition: all 0.2s ease-out;
 
 }
 
@@ -149,7 +166,7 @@ body{
     font-size: 110%;
     padding: 2px;
     border-radius: 5px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
 }
 
 footer{
